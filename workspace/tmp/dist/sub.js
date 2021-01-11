@@ -7,9 +7,9 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-eval("console.log('this is a main js file.');\n\n//# sourceURL=webpack://tmp/./src/index.js?");
+/*!********************!*\
+  !*** ./src/sub.js ***!
+  \********************/
+eval("console.log('this is a sub js file.');\n\n//# sourceURL=webpack://tmp/./src/sub.js?");
 /******/ })()
 ;
