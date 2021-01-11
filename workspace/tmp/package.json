@@ -1,0 +1,10 @@
+{
+  "name": "tmp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
+  }
+}
