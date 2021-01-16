@@ -17,6 +17,19 @@ module.exports = {
                     'postcss-loader',
                     'sass-loader'
                 ]
+            },
+            {
+                test:/\.png$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[contenthash].[ext]',
+                            outputPath: 'images',
+                            publicPath: 'images'
+                        }    
+                    }
+                ]
             }
         ]
     }
