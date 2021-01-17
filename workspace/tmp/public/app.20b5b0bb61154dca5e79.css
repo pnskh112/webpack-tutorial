@@ -1,0 +1,17 @@
+h1 {
+  font-size: 2em;
+  transition: all 0.3s;
+  color: blue;
+}
+h1:hover {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  color: red;
+}
+
+.bg {
+  background-image: url(images/[chunkhash].png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
