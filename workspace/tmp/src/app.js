@@ -2,5 +2,11 @@ import './sub';
 import './app.scss';
 
 
+function init(callback){
+    const hoge = 'hoge';
+    callback(hoge);
+}
 
-console.log('this is a main js file.');
+init(function(param){
+    console.log(param);
+});
