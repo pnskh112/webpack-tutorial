@@ -6,10 +6,17 @@ module.exports = {
     entry: {app: './src/app.js',sub: './src/sub.js'},
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: '[name].[chunkhash].js'
+        filename: '[name].js'
     },
     module: {
         rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [
+                    'babel-loader'
+                ]
+            },
             {
                 test: /\.scss$/, 
                 use: [
@@ -37,7 +44,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '[name].[chunkhash].css'
+            filename: '[name].css'
         })
     ]
 }
