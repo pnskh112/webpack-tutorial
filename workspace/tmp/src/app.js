@@ -1,12 +1,15 @@
 import './sub';
 import './app.scss';
+// import 'regenerator-runtime';
+// import 'core-js';
 
-
-function init(callback){
-    const hoge = 'hoge';
-    callback(hoge);
+const init = async () => {
+    console.log("this is a main js file.");
+    await asyncFn();
 }
 
-init(function(param){
-    console.log(param);
-});
+async function asyncFn(){
+    console.log([1,2,3].includes(0));
+}
+
+init();
